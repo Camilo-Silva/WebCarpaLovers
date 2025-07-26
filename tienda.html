@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - CarpaLovers</title>
+    <meta name="description" content="Descubre los mejores productos para camping recomendados por nuestros expertos. Carpas, equipamiento y accesorios para tu aventura perfecta.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="tips.html" class="nav-link">Tips de Acampe</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="tienda.html" class="nav-link active">Tienda</a></li>
+                    <li class="nav-item"><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-submit"><i class="fas fa-search"></i></button>
+                <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Tienda CarpaLovers</h1>
+                <p class="page-subtitle">Equipamiento recomendado por expertos para tus aventuras al aire libre</p>
+                <div class="disclaimer">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Los productos mostrados contienen enlaces de afiliados. Comprando a través de estos enlaces nos ayudas a mantener el contenido gratuito.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Filters -->
+        <section class="product-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="carpas">Carpas</button>
+                    <button class="filter-btn" data-category="mochilas">Mochilas</button>
+                    <button class="filter-btn" data-category="cocina">Cocina</button>
+                    <button class="filter-btn" data-category="iluminacion">Iluminación</button>
+                    <button class="filter-btn" data-category="herramientas">Herramientas</button>
+                    <button class="filter-btn" data-category="ropa">Ropa</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="featured-grid">
+                    <div class="featured-product">
+                        <div class="product-badge">Más Vendido</div>
+                        <div class="product-image">
+                            <img src="images/product-carpa-featured.jpg" alt="Carpa Doite Kailas 4" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Carpa Doite Kailas 4 Personas</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(128 reseñas)</span>
+                            </div>
+                            <p class="product-description">Carpa familiar resistente al viento y lluvia. Perfecta para camping de 3-4 estaciones.</p>
+                            <div class="product-price">
+                                <span class="price-original">$89.990</span>
+                                <span class="price-current">$72.990</span>
+                                <span class="discount">-19%</span>
+                            </div>
+                            <a href="https://mercadolibre.com.ar/carpa-doite" target="_blank" rel="noopener" class="btn btn-primary">Ver en MercadoLibre <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="products-grid-section">
+            <div class="container">
+                <div class="products-grid" id="products-grid">
+                    <!-- Carpas -->
+                    <div class="product-card" data-category="carpas">
+                        <div class="product-image">
+                            <img src="images/product-carpa-1.jpg" alt="Carpa Montagne Aconcagua" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="1">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Carpa Montagne Aconcagua 2P</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(89)</span>
+                            </div>
+                            <p class="product-price">$45.990</p>
+                            <a href="https://mercadolibre.com.ar/carpa-montagne" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="carpas">
+                        <div class="product-image">
+                            <img src="images/product-carpa-2.jpg" alt="Carpa Coleman Instant" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="2">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Carpa Coleman Instant 6P</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(156)</span>
+                            </div>
+                            <p class="product-price">$98.500</p>
+                            <a href="https://mercadolibre.com.ar/carpa-coleman" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <!-- Mochilas -->
+                    <div class="product-card" data-category="mochilas">
+                        <div class="product-image">
+                            <img src="images/product-mochila-1.jpg" alt="Mochila Doite Fastpacking 30L" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="3">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mochila Doite Fastpacking 30L</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(74)</span>
+                            </div>
+                            <p class="product-price">$32.990</p>
+                            <a href="https://mercadolibre.com.ar/mochila-doite" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mochilas">
+                        <div class="product-image">
+                            <img src="images/product-mochila-2.jpg" alt="Mochila Montagne Trek 50L" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="4">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mochila Montagne Trek 50L</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(203)</span>
+                            </div>
+                            <p class="product-price">$54.990</p>
+                            <a href="https://mercadolibre.com.ar/mochila-montagne" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <!-- Cocina -->
+                    <div class="product-card" data-category="cocina">
+                        <div class="product-image">
+                            <img src="images/product-anafe-1.jpg" alt="Anafe Doite Gas Mini" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="5">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Anafe Doite Gas Mini</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(91)</span>
+                            </div>
+                            <p class="product-price">$18.990</p>
+                            <a href="https://mercadolibre.com.ar/anafe-doite" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="cocina">
+                        <div class="product-image">
+                            <img src="images/product-ollas-1.jpg" alt="Set Ollas Coleman" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="6">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Set Ollas Coleman 4 Piezas</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(67)</span>
+                            </div>
+                            <p class="product-price">$25.990</p>
+                            <a href="https://mercadolibre.com.ar/ollas-coleman" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <!-- Iluminación -->
+                    <div class="product-card" data-category="iluminacion">
+                        <div class="product-image">
+                            <img src="images/product-linterna-1.jpg" alt="Linterna LED Recargable" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="7">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Linterna LED Recargable 1000L</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(142)</span>
+                            </div>
+                            <p class="product-price">$12.990</p>
+                            <a href="https://mercadolibre.com.ar/linterna-led" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="iluminacion">
+                        <div class="product-image">
+                            <img src="images/product-farol-1.jpg" alt="Farol Coleman LED" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="8">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Farol Coleman LED 360°</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(98)</span>
+                            </div>
+                            <p class="product-price">$16.990</p>
+                            <a href="https://mercadolibre.com.ar/farol-coleman" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas -->
+                    <div class="product-card" data-category="herramientas">
+                        <div class="product-image">
+                            <img src="images/product-navaja-1.jpg" alt="Navaja Multiusos" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="9">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Navaja Multiusos 15 Funciones</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(234)</span>
+                            </div>
+                            <p class="product-price">$8.990</p>
+                            <a href="https://mercadolibre.com.ar/navaja-multiusos" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <!-- Ropa -->
+                    <div class="product-card" data-category="ropa">
+                        <div class="product-image">
+                            <img src="images/product-campera-1.jpg" alt="Campera Impermeable" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="10">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Campera Impermeable Montagne</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>(176)</span>
+                            </div>
+                            <p class="product-price">$42.990</p>
+                            <a href="https://mercadolibre.com.ar/campera-montagne" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="ropa">
+                        <div class="product-image">
+                            <img src="images/product-botas-1.jpg" alt="Botas de Trekking" loading="lazy">
+                            <div class="product-overlay">
+                                <button class="quick-view" data-product="11">Vista Rápida</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Botas de Trekking Waterproof</h3>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span>(123)</span>
+                            </div>
+                            <p class="product-price">$38.990</p>
+                            <a href="https://mercadolibre.com.ar/botas-trekking" target="_blank" rel="noopener" class="btn btn-outline">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="brands-section">
+            <div class="container">
+                <h2 class="section-title">Marcas Recomendadas</h2>
+                <div class="brands-grid">
+                    <div class="brand-item">
+                        <img src="images/brand-doite.png" alt="Doite" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="images/brand-coleman.png" alt="Coleman" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="images/brand-montagne.png" alt="Montagne" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="images/brand-north-face.png" alt="The North Face" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="images/brand-salomon.png" alt="Salomon" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="images/brand-patagonia.png" alt="Patagonia" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Productos Probados</h3>
+                        <p>Todos los productos han sido probados por nuestro equipo de expertos en condiciones reales.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Enlaces de Confianza</h3>
+                        <p>Solo recomendamos tiendas y vendedores verificados con excelente reputación.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Precios Actualizados</h3>
+                        <p>Mantenemos los precios actualizados regularmente para ofrecerte la mejor información.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">Tu guía para la aventura al aire libre.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarpaLovers - Tu Guía para la Aventura al Aire Libre</title>
+    <meta name="description" content="Descubre los mejores tips de acampe, rutas increíbles y encuentra el equipo perfecto para tu próxima aventura con CarpaLovers.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <!-- Menu hamburguesa (móvil) -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Menú de navegación -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tips.html" class="nav-link">Tips de Acampe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tienda.html" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Búsqueda y redes sociales -->
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Barra de búsqueda -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar tips, equipos, destinos...">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <img src="images/hero-camping.jpg" alt="Campamento en la naturaleza" class="hero-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="hero-title">CarpaLovers: Tu Guía para la Aventura al Aire Libre</h1>
+                    <p class="hero-subtitle">Descubre los mejores tips de acampe, rutas increíbles y encuentra el equipo perfecto para tu próxima aventura</p>
+                    <a href="tips.html" class="btn btn-primary hero-btn">Explorar Tips de Acampe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos y Tips Recientes -->
+        <section class="recent-tips">
+            <div class="container">
+                <h2 class="section-title">Últimos Tips y Aventuras</h2>
+                <div class="tips-grid">
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-armado-carpa.jpg" alt="Cómo armar una carpa perfectamente">
+                            <div class="tip-type">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">Cómo armar una carpa perfectamente</h3>
+                            <p class="tip-summary">Aprende los secretos para montar tu carpa rápido y de manera segura, incluso con mal tiempo.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-clock"></i> 5 min
+                                </span>
+                                <span class="tip-category">Principiante</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-fogata-segura.jpg" alt="Fogata segura en campamento">
+                            <div class="tip-type">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">Fogata segura en campamento</h3>
+                            <p class="tip-summary">Todo lo que necesitas saber para hacer una fogata segura y responsable con el medio ambiente.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-clock"></i> 8 min
+                                </span>
+                                <span class="tip-category">Seguridad</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-mochila-equipaje.jpg" alt="Cómo organizar tu mochila">
+                            <div class="tip-type">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">Organiza tu mochila como un experto</h3>
+                            <p class="tip-summary">Técnicas profesionales para optimizar el espacio y peso de tu equipaje de camping.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-book"></i> 4 min lectura
+                                </span>
+                                <span class="tip-category">Equipo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-cocina-campamento.jpg" alt="Recetas fáciles para camping">
+                            <div class="tip-type">
+                                <i class="fas fa-images"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">Recetas fáciles para camping</h3>
+                            <p class="tip-summary">Deliciosas comidas que puedes preparar al aire libre con ingredientes simples.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-images"></i> Galería
+                                </span>
+                                <span class="tip-category">Cocina</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-nudos-camping.jpg" alt="Nudos esenciales para camping">
+                            <div class="tip-type">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">5 nudos esenciales para camping</h3>
+                            <p class="tip-summary">Los nudos más útiles que todo campista debe dominar para asegurar su equipamiento.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-clock"></i> 12 min
+                                </span>
+                                <span class="tip-category">Técnicas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tip-card">
+                        <div class="tip-image">
+                            <img src="images/tip-primeros-auxilios.jpg" alt="Primeros auxilios en la naturaleza">
+                            <div class="tip-type">
+                                <i class="fas fa-book"></i>
+                            </div>
+                        </div>
+                        <div class="tip-content">
+                            <h3 class="tip-title">Primeros auxilios en la naturaleza</h3>
+                            <p class="tip-summary">Kit básico y conocimientos esenciales para manejar emergencias durante el camping.</p>
+                            <div class="tip-meta">
+                                <span class="tip-duration">
+                                    <i class="fas fa-book"></i> 10 min lectura
+                                </span>
+                                <span class="tip-category">Seguridad</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <a href="tips.html" class="btn btn-secondary">Ver Todos los Tips</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Comunidad -->
+        <section class="community">
+            <div class="container">
+                <h2 class="section-title">Únete a Nuestra Comunidad</h2>
+                <p class="community-text">
+                    Forma parte de miles de aventureros que comparten su pasión por el camping. 
+                    Síguenos en nuestras redes sociales para contenido diario, tips exclusivos y 
+                    las mejores aventuras de nuestra comunidad.
+                </p>
+                <div class="social-grid">
+                    <a href="#" class="social-card tiktok">
+                        <div class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>TikTok</h3>
+                            <p>Videos cortos y tips rápidos</p>
+                            <span class="followers">@carpalovers</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card instagram">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Instagram</h3>
+                            <p>Fotos inspiradoras y stories</p>
+                            <span class="followers">@carpalovers</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card facebook">
+                        <div class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Facebook</h3>
+                            <p>Comunidad y discusiones</p>
+                            <span class="followers">CarpaLovers Oficial</span>
+                        </div>
+                    </a>
+                    <a href="#" class="social-card youtube">
+                        <div class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>YouTube</h3>
+                            <p>Tutoriales completos</p>
+                            <span class="followers">CarpaLovers</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre CarpaLovers -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Sobre CarpaLovers</h2>
+                        <p>
+                            Somos apasionados del camping que compartimos nuestra experiencia para ayudarte 
+                            a vivir tus propias aventuras. Desde principiantes hasta expertos, hay algo para todos. 
+                            Nuestra misión es hacer que el camping sea accesible, seguro y divertido para toda la familia.
+                        </p>
+                        <p>
+                            Con años de experiencia en la naturaleza, hemos recopilado los mejores consejos, 
+                            técnicas y recomendaciones para que tu próxima aventura sea inolvidable.
+                        </p>
+                        <a href="sobre-nosotros.html" class="btn btn-outline">Conoce Más Sobre Nosotros</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-team.jpg" alt="Equipo CarpaLovers en una aventura">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">
+                        Tu guía para la aventura al aire libre. Descubre, aprende y vive experiencias únicas en la naturaleza.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

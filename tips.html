@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips de Acampe - CarpaLovers</title>
+    <meta name="description" content="Descubre los mejores tips de acampe para todos los niveles. Desde principiantes hasta expertos, encuentra consejos prácticos para tu aventura.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tips.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <!-- Menu hamburguesa (móvil) -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Menú de navegación -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tips.html" class="nav-link active">Tips de Acampe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tienda.html" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Búsqueda y redes sociales -->
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Barra de búsqueda -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar tips, técnicas, equipos...">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Tips de Acampe</h1>
+                    <p class="page-subtitle">Aprende técnicas esenciales y consejos prácticos para vivir aventuras seguras y memorables en la naturaleza</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-container">
+                    <!-- Categorías -->
+                    <div class="filter-group">
+                        <h3 class="filter-title">Categorías</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">
+                                <i class="fas fa-th"></i>
+                                Todos
+                            </button>
+                            <button class="filter-btn" data-filter="principiante">
+                                <i class="fas fa-seedling"></i>
+                                Principiantes
+                            </button>
+                            <button class="filter-btn" data-filter="experto">
+                                <i class="fas fa-mountain"></i>
+                                Expertos
+                            </button>
+                            <button class="filter-btn" data-filter="familia">
+                                <i class="fas fa-users"></i>
+                                Familias
+                            </button>
+                            <button class="filter-btn" data-filter="mochilero">
+                                <i class="fas fa-hiking"></i>
+                                Mochileros
+                            </button>
+                            <button class="filter-btn" data-filter="equipo">
+                                <i class="fas fa-tools"></i>
+                                Equipo
+                            </button>
+                            <button class="filter-btn" data-filter="cocina">
+                                <i class="fas fa-utensils"></i>
+                                Cocina
+                            </button>
+                            <button class="filter-btn" data-filter="seguridad">
+                                <i class="fas fa-shield-alt"></i>
+                                Seguridad
+                            </button>
+                            <button class="filter-btn" data-filter="tecnicas">
+                                <i class="fas fa-cogs"></i>
+                                Técnicas
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ordenar por -->
+                    <div class="sort-group">
+                        <h3 class="filter-title">Ordenar por</h3>
+                        <select class="sort-select" id="sort-select">
+                            <option value="recent">Más Recientes</option>
+                            <option value="popular">Más Populares</option>
+                            <option value="views">Más Vistos</option>
+                            <option value="duration">Duración</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Grid -->
+        <section class="tips-content">
+            <div class="container">
+                <div class="tips-grid" id="tips-grid">
+                    <!-- Tip 1 -->
+                    <article class="tip-card" data-category="principiante" data-tipid="1">
+                        <div class="tip-image">
+                            <img src="images/tips/armado-carpa.jpg" alt="Cómo armar una carpa perfectamente">
+                            <div class="tip-type video">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tip-duration">5:30</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category principiante">Principiante</span>
+                                <span class="tip-category equipo">Equipo</span>
+                            </div>
+                            <h3 class="tip-title">Cómo armar una carpa perfectamente</h3>
+                            <p class="tip-summary">Aprende los secretos para montar tu carpa rápido y de manera segura, incluso con mal tiempo. Técnicas probadas para principiantes.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        2.5k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        156
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 2 -->
+                    <article class="tip-card" data-category="seguridad" data-tipid="2">
+                        <div class="tip-image">
+                            <img src="images/tips/fogata-segura.jpg" alt="Fogata segura en campamento">
+                            <div class="tip-type video">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tip-duration">8:15</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category seguridad">Seguridad</span>
+                                <span class="tip-category tecnicas">Técnicas</span>
+                            </div>
+                            <h3 class="tip-title">Fogata segura en campamento</h3>
+                            <p class="tip-summary">Todo lo que necesitas saber para hacer una fogata segura y responsable con el medio ambiente. Incluye técnicas de prevención.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        4.1k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        298
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 3 -->
+                    <article class="tip-card" data-category="equipo" data-tipid="3">
+                        <div class="tip-image">
+                            <img src="images/tips/mochila-equipaje.jpg" alt="Cómo organizar tu mochila">
+                            <div class="tip-type article">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="tip-read-time">4 min</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category equipo">Equipo</span>
+                                <span class="tip-category mochilero">Mochileros</span>
+                            </div>
+                            <h3 class="tip-title">Organiza tu mochila como un experto</h3>
+                            <p class="tip-summary">Técnicas profesionales para optimizar el espacio y peso de tu equipaje. Aprende a empacar eficientemente para cualquier tipo de aventura.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        3.2k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        201
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 4 -->
+                    <article class="tip-card" data-category="cocina" data-tipid="4">
+                        <div class="tip-image">
+                            <img src="images/tips/cocina-campamento.jpg" alt="Recetas fáciles para camping">
+                            <div class="tip-type gallery">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div class="tip-count">12 fotos</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category cocina">Cocina</span>
+                                <span class="tip-category familia">Familias</span>
+                            </div>
+                            <h3 class="tip-title">Recetas fáciles para camping</h3>
+                            <p class="tip-summary">Deliciosas comidas que puedes preparar al aire libre con ingredientes simples. Perfecto para familias y grupos grandes.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        5.8k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        412
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 5 -->
+                    <article class="tip-card" data-category="tecnicas" data-tipid="5">
+                        <div class="tip-image">
+                            <img src="images/tips/nudos-camping.jpg" alt="Nudos esenciales para camping">
+                            <div class="tip-type video">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tip-duration">12:45</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category tecnicas">Técnicas</span>
+                                <span class="tip-category experto">Expertos</span>
+                            </div>
+                            <h3 class="tip-title">5 nudos esenciales para camping</h3>
+                            <p class="tip-summary">Los nudos más útiles que todo campista debe dominar para asegurar su equipamiento. Explicación paso a paso con ejemplos prácticos.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        6.3k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        523
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 6 -->
+                    <article class="tip-card" data-category="seguridad" data-tipid="6">
+                        <div class="tip-image">
+                            <img src="images/tips/primeros-auxilios.jpg" alt="Primeros auxilios en la naturaleza">
+                            <div class="tip-type article">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="tip-read-time">10 min</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category seguridad">Seguridad</span>
+                                <span class="tip-category experto">Expertos</span>
+                            </div>
+                            <h3 class="tip-title">Primeros auxilios en la naturaleza</h3>
+                            <p class="tip-summary">Kit básico y conocimientos esenciales para manejar emergencias durante el camping. Guía completa de seguridad outdoor.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        7.9k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        654
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 7 -->
+                    <article class="tip-card" data-category="familia" data-tipid="7">
+                        <div class="tip-image">
+                            <img src="images/tips/camping-ninos.jpg" alt="Camping con niños">
+                            <div class="tip-type video">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tip-duration">15:20</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category familia">Familias</span>
+                                <span class="tip-category principiante">Principiante</span>
+                            </div>
+                            <h3 class="tip-title">Camping con niños: Guía completa</h3>
+                            <p class="tip-summary">Consejos esenciales para disfrutar del camping en familia. Actividades, seguridad y equipos especiales para los más pequeños.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        4.7k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        387
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 8 -->
+                    <article class="tip-card" data-category="mochilero" data-tipid="8">
+                        <div class="tip-image">
+                            <img src="images/tips/trekking-montaña.jpg" alt="Trekking en montaña">
+                            <div class="tip-type article">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="tip-read-time">8 min</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category mochilero">Mochileros</span>
+                                <span class="tip-category experto">Expertos</span>
+                            </div>
+                            <h3 class="tip-title">Trekking en montaña: Preparación esencial</h3>
+                            <p class="tip-summary">Guía completa para planificar y ejecutar trekkings seguros en terreno montañoso. Desde la planificación hasta la ejecución.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        8.1k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        721
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tip 9 -->
+                    <article class="tip-card" data-category="equipo" data-tipid="9">
+                        <div class="tip-image">
+                            <img src="images/tips/elegir-carpa.jpg" alt="Cómo elegir la carpa perfecta">
+                            <div class="tip-type video">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="tip-duration">18:30</div>
+                        </div>
+                        <div class="tip-content">
+                            <div class="tip-categories">
+                                <span class="tip-category equipo">Equipo</span>
+                                <span class="tip-category principiante">Principiante</span>
+                            </div>
+                            <h3 class="tip-title">Cómo elegir la carpa perfecta</h3>
+                            <p class="tip-summary">Guía completa para elegir la carpa ideal según tu tipo de aventura. Materiales, tamaños, estaciones y presupuesto.</p>
+                            <div class="tip-meta">
+                                <div class="tip-author">
+                                    <i class="fas fa-user"></i>
+                                    <span>CarpaLovers</span>
+                                </div>
+                                <div class="tip-stats">
+                                    <span class="tip-views">
+                                        <i class="fas fa-eye"></i>
+                                        9.2k
+                                    </span>
+                                    <span class="tip-likes">
+                                        <i class="fas fa-heart"></i>
+                                        832
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-secondary load-more-btn" id="load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Cargar Más Tips
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">
+                        Tu guía para la aventura al aire libre. Descubre, aprende y vive experiencias únicas en la naturaleza.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tip Modal -->
+    <div class="modal" id="tip-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 class="modal-title">Título del Tip</h2>
+                <div class="modal-meta">
+                    <span class="modal-duration">
+                        <i class="fas fa-clock"></i>
+                        5:30
+                    </span>
+                    <span class="modal-category">Principiante</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video-container">
+                    <iframe class="modal-video" src="" title="Video del tip" allowfullscreen></iframe>
+                </div>
+                <div class="modal-description">
+                    <p>Descripción del tip aparecerá aquí...</p>
+                </div>
+                <div class="modal-tags">
+                    <span class="modal-tag">Carpa</span>
+                    <span class="modal-tag">Principiante</span>
+                    <span class="modal-tag">Equipo</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <button class="btn btn-outline modal-share">
+                        <i class="fas fa-share"></i>
+                        Compartir
+                    </button>
+                    <button class="btn btn-primary modal-view-full">
+                        Ver Completo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Inicializar página de tips
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.CarpaLovers) {
+                window.CarpaLovers.initializeTipsPage();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CarpaLovers</title>
+    <meta name="description" content="Lee nuestros artículos sobre camping, aventuras al aire libre, equipamiento y destinos increíbles para acampar.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="tips.html" class="nav-link">Tips de Acampe</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+                    <li class="nav-item"><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-submit"><i class="fas fa-search"></i></button>
+                <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Blog CarpaLovers</h1>
+                <p class="page-subtitle">Historias, aventuras y consejos de expertos para vivir la mejor experiencia de camping</p>
+            </div>
+        </section>
+
+        <!-- Blog Filters -->
+        <section class="blog-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="aventuras">Aventuras</button>
+                    <button class="filter-btn" data-category="equipamiento">Equipamiento</button>
+                    <button class="filter-btn" data-category="destinos">Destinos</button>
+                    <button class="filter-btn" data-category="consejos">Consejos</button>
+                    <button class="filter-btn" data-category="gastronomia">Gastronomía</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="images/blog-featured.jpg" alt="Camping bajo las estrellas" loading="lazy">
+                        <div class="featured-badge">Artículo Destacado</div>
+                    </div>
+                    <div class="featured-text">
+                        <div class="article-meta">
+                            <span class="category">Aventuras</span>
+                            <span class="date">20 de Julio, 2025</span>
+                        </div>
+                        <h2>Los 10 Mejores Destinos para Camping Bajo las Estrellas</h2>
+                        <p>Descubre los lugares más espectaculares del mundo donde puedes acampar y disfrutar de cielos estrellados únicos, lejos de la contaminación lumínica.</p>
+                        <a href="#" class="read-more-btn">Leer Artículo Completo <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid-section">
+            <div class="container">
+                <div class="blog-grid" id="blog-grid">
+                    <article class="blog-card" data-category="equipamiento">
+                        <div class="card-image">
+                            <img src="images/blog-1.jpg" alt="Guía de carpas para principiantes" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Equipamiento</span>
+                                <span class="date">18 de Julio, 2025</span>
+                            </div>
+                            <h3>Guía Completa: Cómo Elegir tu Primera Carpa</h3>
+                            <p>Todo lo que necesitas saber para elegir la carpa perfecta según tu tipo de aventura, presupuesto y nivel de experiencia.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="consejos">
+                        <div class="card-image">
+                            <img src="images/blog-2.jpg" alt="Camping en invierno" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Consejos</span>
+                                <span class="date">15 de Julio, 2025</span>
+                            </div>
+                            <h3>Camping en Invierno: 15 Tips Esenciales</h3>
+                            <p>Mantente caliente y seguro durante tus aventuras de camping en los meses más fríos del año con estos consejos expertos.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="gastronomia">
+                        <div class="card-image">
+                            <img src="images/blog-3.jpg" alt="Recetas camping" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Gastronomía</span>
+                                <span class="date">12 de Julio, 2025</span>
+                            </div>
+                            <h3>10 Recetas Fáciles para Fogata</h3>
+                            <p>Descubre recetas deliciosas y sencillas que puedes preparar en tu próxima aventura de camping usando solo ingredientes básicos.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="destinos">
+                        <div class="card-image">
+                            <img src="images/blog-4.jpg" alt="Parques nacionales Argentina" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Destinos</span>
+                                <span class="date">10 de Julio, 2025</span>
+                            </div>
+                            <h3>Los 5 Parques Nacionales Más Bellos de Argentina</h3>
+                            <p>Una guía completa de los parques nacionales argentinos ideales para camping, con información práctica y recomendaciones.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="aventuras">
+                        <div class="card-image">
+                            <img src="images/blog-5.jpg" alt="Trekking con carpa" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Aventuras</span>
+                                <span class="date">8 de Julio, 2025</span>
+                            </div>
+                            <h3>Mi Primera Experiencia de Trekking con Carpa</h3>
+                            <p>Relato personal de una aventura de 5 días caminando por la Patagonia, llevando todo el equipamiento en la mochila.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="equipamiento">
+                        <div class="card-image">
+                            <img src="images/blog-6.jpg" alt="Kit supervivencia" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Equipamiento</span>
+                                <span class="date">5 de Julio, 2025</span>
+                            </div>
+                            <h3>Kit de Supervivencia: 20 Items Indispensables</h3>
+                            <p>La lista definitiva de elementos que no pueden faltar en tu kit de supervivencia para camping y aventuras al aire libre.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="consejos">
+                        <div class="card-image">
+                            <img src="images/blog-7.jpg" alt="Camping ecológico" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Consejos</span>
+                                <span class="date">3 de Julio, 2025</span>
+                            </div>
+                            <h3>Camping Ecológico: Deja Solo Huellas</h3>
+                            <p>Aprende los principios del camping responsable y cómo minimizar tu impacto ambiental durante tus aventuras.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="gastronomia">
+                        <div class="card-image">
+                            <img src="images/blog-8.jpg" alt="Conservar alimentos camping" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Gastronomía</span>
+                                <span class="date">1 de Julio, 2025</span>
+                            </div>
+                            <h3>Cómo Conservar Alimentos Durante el Camping</h3>
+                            <p>Técnicas y consejos prácticos para mantener tus alimentos frescos y seguros durante expediciones largas sin refrigeración.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="destinos">
+                        <div class="card-image">
+                            <img src="images/blog-9.jpg" alt="Camping playa" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="category">Destinos</span>
+                                <span class="date">28 de Junio, 2025</span>
+                            </div>
+                            <h3>Las Mejores Playas para Camping en Argentina</h3>
+                            <p>Descubre playas vírgenes y campings costeros donde puedes despertar con el sonido del mar y vistas espectaculares.</p>
+                            <a href="#" class="read-more">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i> Anterior</button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="pagination-number">8</button>
+                    </div>
+                    <button class="pagination-btn">Siguiente <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Mantente al día con nuestras aventuras</h2>
+                    <p>Suscríbete a nuestro newsletter y recibe los mejores tips, destinos y ofertas directamente en tu email.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">Tu guía para la aventura al aire libre.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

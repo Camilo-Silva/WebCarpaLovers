@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo de fondo marrón -->
+  <circle cx="100" cy="100" r="100" fill="#8B4513"/>
+  
+  <!-- Luna -->
+  <path d="M 65 45 Q 75 35, 85 45 Q 75 55, 65 45" fill="#FFE4B5" opacity="0.9"/>
+  
+  <!-- Estrellas -->
+  <circle cx="45" cy="55" r="2" fill="#FFE4B5"/>
+  <circle cx="55" cy="40" r="1.5" fill="#FFE4B5"/>
+  <circle cx="125" cy="35" r="2" fill="#FFE4B5"/>
+  <circle cx="140" cy="50" r="1.5" fill="#FFE4B5"/>
+  <circle cx="155" cy="45" r="1" fill="#FFE4B5"/>
+  <circle cx="35" cy="70" r="1" fill="#FFE4B5"/>
+  
+  <!-- Árboles de fondo -->
+  <polygon points="40,130 50,110 60,130" fill="#2F4F2F"/>
+  <polygon points="35,140 55,105 75,140" fill="#228B22"/>
+  <polygon points="130,140 145,105 160,140" fill="#2F4F2F"/>
+  <polygon points="135,130 150,110 165,130" fill="#228B22"/>
+  
+  <!-- Carpa principal -->
+  <polygon points="100,85 115,115 85,115" fill="#F5F5DC"/>
+  <polygon points="100,85 107,115 93,115" fill="#E6E6FA"/>
+  <line x1="100" y1="85" x2="100" y2="115" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Base de la carpa -->
+  <rect x="85" y="115" width="30" height="3" fill="#8B4513"/>
+  
+  <!-- Texto CARPA -->
+  <text x="100" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F5F5DC" text-anchor="middle">CARPA</text>
+  
+  <!-- Texto LOVERS -->
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="10" font-weight="normal" fill="#F5F5DC" text-anchor="middle" letter-spacing="2px">L O V E R S</text>
+</svg>

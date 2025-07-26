@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - CarpaLovers</title>
+    <meta name="description" content="Ponte en contacto con CarpaLovers. Envíanos tus preguntas, sugerencias o comparte tu experiencia de camping.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (mismo que otras páginas) -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="tips.html" class="nav-link">Tips de Acampe</a></li>
+                    <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+                    <li class="nav-item"><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-submit"><i class="fas fa-search"></i></button>
+                <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contáctanos</h1>
+                <p class="page-subtitle">¿Tienes preguntas sobre camping? ¿Quieres compartir tu aventura? ¡Nos encantaría escucharte!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulario -->
+                    <div class="contact-form-container">
+                        <h2>Envíanos un mensaje</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Asunto *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hola@carpalovers.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+54 11 1234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horario de Atención</h4>
+                                <p>Lun - Vie: 9:00 - 18:00<br>Sáb: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Síguenos en redes sociales</h4>
+                            <div class="social-links-contact">
+                                <a href="#" class="social-link-contact tiktok">
+                                    <i class="fab fa-tiktok"></i>
+                                    @carpalovers
+                                </a>
+                                <a href="#" class="social-link-contact instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    @carpalovers
+                                </a>
+                                <a href="#" class="social-link-contact facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    CarpaLovers Oficial
+                                </a>
+                                <a href="#" class="social-link-contact youtube">
+                                    <i class="fab fa-youtube"></i>
+                                    CarpaLovers
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (mismo que otras páginas) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">Tu guía para la aventura al aire libre.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.CarpaLovers) {
+                window.CarpaLovers.initializeContactForm();
+            }
+        });
+    </script>
+</body>
+</html>

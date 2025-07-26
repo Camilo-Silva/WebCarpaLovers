@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de la Aventura - CarpaLovers</title>
+    <meta name="description" content="Explora nuestra galería de fotos inspiradoras de campamentos, aventuras y experiencias únicas en la naturaleza.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="logo-img">
+                    <span class="logo-text">CarpaLovers</span>
+                </div>
+                
+                <!-- Menu hamburguesa (móvil) -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <!-- Menú de navegación -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tips.html" class="nav-link">Tips de Acampe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galeria.html" class="nav-link active">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tienda.html" class="nav-link">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Búsqueda y redes sociales -->
+                <div class="nav-actions">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Barra de búsqueda -->
+        <div class="search-bar" id="search-bar">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar fotos por ubicación, actividad...">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" id="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Galería de la Aventura</h1>
+                    <p class="page-subtitle">
+                        Inspírate con nuestra colección de momentos únicos en la naturaleza. 
+                        Cada imagen cuenta una historia de aventura, descubrimiento y conexión con el aire libre.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filters -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th"></i>
+                            Todas
+                        </button>
+                        <button class="filter-btn" data-filter="camping">
+                            <i class="fas fa-campground"></i>
+                            Camping
+                        </button>
+                        <button class="filter-btn" data-filter="montaña">
+                            <i class="fas fa-mountain"></i>
+                            Montaña
+                        </button>
+                        <button class="filter-btn" data-filter="playa">
+                            <i class="fas fa-umbrella-beach"></i>
+                            Playa
+                        </button>
+                        <button class="filter-btn" data-filter="bosque">
+                            <i class="fas fa-tree"></i>
+                            Bosque
+                        </button>
+                        <button class="filter-btn" data-filter="aventura">
+                            <i class="fas fa-hiking"></i>
+                            Aventura
+                        </button>
+                        <button class="filter-btn" data-filter="atardecer">
+                            <i class="fas fa-sun"></i>
+                            Atardeceres
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="camping montaña">
+                        <img src="images/gallery/camping-montaña-1.jpg" alt="Campamento en las montañas al amanecer" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Amanecer en las montañas</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Bariloche, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="playa camping">
+                        <img src="images/gallery/camping-playa-1.jpg" alt="Carpa frente al mar durante atardecer" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Camping frente al mar</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Costa Atlántica, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="bosque aventura">
+                        <img src="images/gallery/trekking-bosque-1.jpg" alt="Sendero entre árboles milenarios" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Sendero del bosque encantado</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Ushuaia, Tierra del Fuego
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="atardecer montaña">
+                        <img src="images/gallery/atardecer-montaña-1.jpg" alt="Espectacular atardecer desde la cima" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Atardecer dorado</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Mendoza, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="camping aventura">
+                        <img src="images/gallery/campamento-nocturno-1.jpg" alt="Campamento bajo las estrellas" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Noche estrellada</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    San Juan, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="playa atardecer">
+                        <img src="images/gallery/atardecer-playa-1.jpg" alt="Reflejos dorados en la playa" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Reflejos dorados</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Mar del Plata, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item" data-category="montaña aventura">
+                        <img src="images/gallery/escalada-1.jpg" alt="Aventurero escalando pared rocosa" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Desafío vertical</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    El Chaltén, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item" data-category="bosque camping">
+                        <img src="images/gallery/camping-bosque-1.jpg" alt="Carpa entre los pinos" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Refugio entre pinos</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Villa La Angostura, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item" data-category="aventura montaña">
+                        <img src="images/gallery/kayak-lago-1.jpg" alt="Kayak en lago cristalino de montaña" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Aventura acuática</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Villa Traful, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 10 -->
+                    <div class="gallery-item" data-category="camping atardecer">
+                        <img src="images/gallery/fogata-noche-1.jpg" alt="Fogata nocturna con chispas al viento" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Calor de hogar</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Córdoba, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 11 -->
+                    <div class="gallery-item" data-category="playa aventura">
+                        <img src="images/gallery/surf-amanecer-1.jpg" alt="Surfista en olas durante amanecer" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Surf al amanecer</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Necochea, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 12 -->
+                    <div class="gallery-item" data-category="bosque aventura">
+                        <img src="images/gallery/puente-colgante-1.jpg" alt="Cruzando puente colgante en la selva" class="gallery-image" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3 class="gallery-title">Aventura selvática</h3>
+                                <p class="gallery-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Misiones, Argentina
+                                </p>
+                            </div>
+                            <button class="gallery-zoom" aria-label="Ver imagen completa">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-secondary load-more-btn" id="load-more-btn">
+                        <i class="fas fa-plus"></i>
+                        Cargar Más Fotos
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo-carpalovers.png" alt="CarpaLovers Logo" class="footer-logo-img">
+                        <span class="footer-logo-text">CarpaLovers</span>
+                    </div>
+                    <p class="footer-description">
+                        Tu guía para la aventura al aire libre. Descubre, aprende y vive experiencias únicas en la naturaleza.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="tips.html">Tips de Acampe</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Información</h3>
+                    <ul class="footer-links">
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Síguenos</h3>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="current-year">2025</span> CarpaLovers. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar galería">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-next" id="lightbox-next" aria-label="Imagen siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-content">
+                <img class="lightbox-image" id="lightbox-image" src="" alt="">
+                <div class="lightbox-info">
+                    <h3 class="lightbox-title" id="lightbox-title"></h3>
+                    <p class="lightbox-location" id="lightbox-location"></p>
+                </div>
+            </div>
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">12</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Inicializar galería
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.CarpaLovers) {
+                window.CarpaLovers.initializeGallery();
+            }
+            
+            // Configurar filtros específicos de galería
+            setupGalleryFilters();
+            setupLoadMore();
+        });
+
+        function setupGalleryFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.dataset.filter;
+                    
+                    // Actualizar botones activos
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtrar elementos
+                    galleryItems.forEach(item => {
+                        const itemCategories = item.dataset.category.split(' ');
+                        
+                        if (filter === 'all' || itemCategories.includes(filter)) {
+                            item.style.display = 'block';
+                            item.classList.add('fade-in');
+                        } else {
+                            item.style.display = 'none';
+                            item.classList.remove('fade-in');
+                        }
+                    });
+                });
+            });
+        }
+
+        function setupLoadMore() {
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            let loadCount = 0;
+            const maxLoads = 3; // Limitar cargas para demo
+            
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    loadCount++;
+                    
+                    // Simular carga de más imágenes
+                    const galleryGrid = document.getElementById('gallery-grid');
+                    const newItems = createNewGalleryItems(6); // Crear 6 nuevas imágenes
+                    
+                    newItems.forEach(item => {
+                        galleryGrid.appendChild(item);
+                    });
+                    
+                    // Ocultar botón después de cierto número de cargas
+                    if (loadCount >= maxLoads) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                    
+                    // Actualizar contador del lightbox
+                    updateLightboxCounter();
+                });
+            }
+        }
+
+        function createNewGalleryItems(count) {
+            const items = [];
+            const categories = ['camping', 'montaña', 'playa', 'bosque', 'aventura', 'atardecer'];
+            const locations = ['Patagonia', 'Salta', 'Jujuy', 'Catamarca', 'La Rioja', 'San Luis'];
+            
+            for (let i = 0; i < count; i++) {
+                const item = document.createElement('div');
+                item.className = 'gallery-item fade-in';
+                
+                const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+                const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+                
+                item.dataset.category = randomCategory;
+                
+                item.innerHTML = `
+                    <img src="images/gallery/placeholder-${i + 13}.jpg" alt="Nueva aventura en ${randomLocation}" class="gallery-image" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Nueva aventura ${i + 13}</h3>
+                            <p class="gallery-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                ${randomLocation}, Argentina
+                            </p>
+                        </div>
+                        <button class="gallery-zoom" aria-label="Ver imagen completa">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                `;
+                
+                items.push(item);
+            }
+            
+            return items;
+        }
+
+        function updateLightboxCounter() {
+            const totalImages = document.querySelectorAll('.gallery-image').length;
+            const totalElement = document.getElementById('lightbox-total');
+            if (totalElement) {
+                totalElement.textContent = totalImages;
+            }
+        }
+    </script>
+</body>
+</html>
